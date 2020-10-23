@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Language" content="es-mx">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Póliza de [TipoPoliza] No.[PolizaNo] - [Ejercicio]/[Periodo]</title>
+        <STYLE TYPE="text/css">
+            <!--
+                BODY
+                {
+                font-family:Segoe UI;
+                }
+            -->
+        </STYLE>
+    </head>
+    <body>
+        <table border="0" cellspacing= 0 width="97%" style="border-bottom:0px solid #000000; border-left-style:solid; border-left-width:0px; border-right-style:solid; border-right-width:0px; border-top-style:solid; border-top-width:0px">	
+            <tr>		
+                <td width="50%"align="left" style="border-bottom:1px solid #C0C0C0; border-left-width: medium; border-right-width: medium; border-top-width: medium; " valign="top"><p align="left">					
+                    <font size="5"><b>[RazonSocial]</b></font><br><br>
+                    <font size="2"><b>Ejercico: </b>[Ejercicio]</font><br>
+                    <font size="2"><b>Periodo: </b>[Periodo]</font><br>
+                    <font size="2"><b>Fecha: </b>[Fecha]</font><br><br>
+                    <font size="2"><b>Eje: </b>[Eje]</font>
+                </td>		
+    			<td width="50%"align="center" valign =top style="border-bottom:1px solid #C0C0C0; border-left-width: medium; border-right-width: medium; border-top-width: medium; "><p align="left">
+                    <font size="2"><b>Póliza No. [PolizaNo]</b></font><br>
+                    <font size="2"><b>Póliza ID. [PolizaID]</b></font><br>
+                    <font size="2"><b>ID Documento:</b> [DocumentID]</font><br><br>
+                    <font size="2"><b>Creado El:</b> [CreadoEl]</font><br>
+                    <font size="2"><b>Creado Por:</b> [CreadoPor]</font><br><br>
+                    <font size="2" color=Red><b>[POLIZACANCELACION]</font>
+				</td>
+			</tr>	
+    		<tr>		
+        		<td width="100%" align="center" style="border-bottom:1px solid #C0C0C0; border-left-width: medium; border-right-width: medium; border-top-width: medium; " colspan="2">
+        			<br>
+                	<font size="5"><b>Póliza de [TipoPoliza] <font size=4>[Ejercicio]/[Format(Periodo,00)] - No.[PolizaNo]</b></font><br></font>
+                    <br>
+                </td>		
+    		</tr>	
+    		<tr>		
+        		<td width="100%" align="left" style="border-bottom:1px solid #C0C0C0; border-left-width: medium; border-right-width: medium; border-top-width: medium; " colspan="2">				
+            		<font size="2"><b>[Concepto]</b></font>
+            	</td>		
+    		</tr>	
+		</table>
+		
+		<table border="0"  width="97%" cellspacing= 0 style="border-width:0px; ">	
+		    <tr>		
+		        <td  width="72%" bordercolor="#000000" style="border-bottom:medium none #000000; border-left-width:medium; border-right-width:medium; border-top-width:medium; border-left-style:none; border-right-style:none; border-top-style:none" colspan="6">		<font color="#FFFFFF">		<span style="font-size: 1pt">.<br>		.<br>		.</span></font></td>	
+		    </tr>	
+		</table>	
+		
+    	<table border="0" C cellspacing = 0.5 width="97%" bordercolorlight="#C0C0C0" bordercolordark="#000000" bordercolor="#000000">	
+	        <tr>		
+	            <td width="5%" align="center" style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0"><font size="1"><b>
+				No. CUENTA</b></font></td>		
+	            <td width="1%" nowrap style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0"><font size="1"><b>&nbsp;NOMBRE CUENTA&nbsp;</b></font></td>		
+	            <td width="100%" style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0"><font size="1"><b>&nbsp;CONCEPTO&nbsp;</b></font></td>		
+	            <td width="100" style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" align=right><font size="1"><b>DEBE &nbsp;</b></font></td>		
+	            <td width="20" style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" align=right>&nbsp;</td>	
+	            <td width="100" style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" align=right><font size="1"><b>HABER &nbsp;</b></font></span></td>	
+	        </tr>	
+        	
+        	<DETAIL>	
+            <tr>	
+                <td valign = top align="center" nowrap><font size="1" >&nbsp; [DetalleCuenta]&nbsp; </font></td>		
+                <td valign = top nowrap><font size="1" >&nbsp; [DetalleNombreCuenta] &nbsp;</font></td>		
+                <td valign = top><font size="1" >&nbsp; [DetalleConcepto] &nbsp;</font></td>		
+                <td valign = top align="right"><font size="1" >&nbsp; [format(DetalleDebe,currency)] </font></td>		
+                <td valign = top><font size="1" >&nbsp;</font></td>	
+                <td valign = top align="right"><font  size="1">&nbsp; [format(DetalleHaber,currency)] &nbsp;</font></td>	
+            </tr>	
+	        </DETAIL>	
+	        
+	        <tr>
+                <td align="center" style="border-top:1px solid #C0C0C0;" nowrap><font size="1">&nbsp;</font></td>		
+                <td align="right" style="border-top:1px solid #C0C0C0;"><font size="3">&nbsp;<b> </b></font></td>		
+                <td align="right" style="border-top:1px solid #C0C0C0;"><font size="3">&nbsp;<b> TOTAL</b></font></td>		
+                <td align="right" style="border-top:1px solid #C0C0C0;"><font size="3">&nbsp;<b>[format(TotalDebe,currency)]</b></font></td>		
+                <td style="border-top:1px solid #C0C0C0;">&nbsp;</td>	
+                <td><p align="right" style="border-top:1px solid #C0C0C0;"><font size="3">&nbsp;<b>[format(TotalHaber,currency)]</b></font></td>	
+	        </tr>
+        </table>		
+	</body>
+</html>

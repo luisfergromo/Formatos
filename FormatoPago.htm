@@ -1,0 +1,93 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Aviso de depósito [Proveedor]</title>
+</head>
+
+<body style="font-family: Arial; font-size:12px;">
+  
+<p>Estimado Proveedor <b><i>[Proveedor]</i></b>,</p>
+<p>hemos efectuado el pago a las siguientes facturas por los montos que a 
+continuación se indican:</p>
+<table border="0" cellspacing="0" width="700" style="font-family: Arial; font-size:12px;" cellpadding="0">
+	<tr>
+		<td bgcolor="#000080" width="700" colspan="2"><b><font size="3">&nbsp;<font color="#FFFFFF">Transacción</font></font></b></td>
+	</tr>
+	<tr>
+		<td width="150" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Fecha</b></td>
+		<td width="550" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[Format(FechaOperacion,Medium Date)]</td>
+	</tr>
+	<tr>
+		<td width="150" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Monto del 
+		depósito</b></td>
+		<td width="550" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[Format(Monto,Standard)] MXN</td>
+	</tr>
+	<tr>
+		<td width="150" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Código de 
+		rastreo</b></td>
+		<td width="550" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[CodigoRastreo]</td>
+	</tr>
+	<tr>
+		<td width="150" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Referencia</b></td>
+		<td width="550" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[Referencia]</td>
+	</tr>
+	<tr>
+		<td width="150" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Forma 
+		de Pago</b></td>
+		<td width="550" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[FormaDePago33]</td>
+	</tr>
+</table>
+<br>
+<table border="0" cellspacing="0" width="700" style="font-family: Arial; font-size:12px;" cellpadding="0">
+	<tr>
+		<td bgcolor="#000080" width="350" colspan="2"><b><font size="3" color="#FFFFFF">&nbsp;Cuenta Orígen</font></b></td>
+		<td bgcolor="#000080" width="350" colspan="2"><b><font size="3" color="#FFFFFF">&nbsp;Cuenta Destino</font></b></td>
+	</tr>
+	<tr>
+		<td width="83" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Nombre</b></td>
+		<td width="267" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[CuentaOrigenNombre]</td>
+		<td width="83" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Nombre</b></td>
+		<td width="267" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[CuentaDestinoNombre]</td>
+	</tr>
+	<tr>
+		<td width="83" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Banco</b></td>
+		<td width="267" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[CuentaOrigenBanco]</td>
+		<td width="83" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Banco</b></td>
+		<td width="267" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[CuentaDestinoBanco]</td>
+	</tr>
+	<tr>
+		<td width="83" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Cuenta</b></td>
+		<td width="267" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[CuentaOrigenNumero]</td>
+		<td width="83" bgcolor="#F4F4F4" style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;Cuenta</b></td>
+		<td width="267" style="border-bottom-style: dotted; border-bottom-width: 1px">&nbsp;[CuentaDestinoNumero]</td>
+	</tr>
+</table>
+<br>
+<table border="0" cellspacing="0" width="700" style="font-family: Arial; font-size:12px;" cellpadding="0">
+	<tr>
+		<td bgcolor="#000080"><b><font size="3" color="#FFFFFF">&nbsp;CFDI No.</font></b></td>
+		<td bgcolor="#000080" width="150"><b><font size="3" color="#FFFFFF">&nbsp;Monto Original</font></b></td>
+		<td bgcolor="#000080" width="150"><b><font size="3" color="#FFFFFF">&nbsp;Abono Realizado</font></b></font></td>
+	</tr>
+	<DETAIL>
+	<tr>
+		<td style="border-bottom-style: dotted; border-bottom-width: 1px"><b>&nbsp;[DocumentoSerie][DocumentoFolio]</b> <font size="1" color=#808080>[UUID]</font></td>
+		<td align="right" width="150" style="border-bottom-style: dotted; border-bottom-width: 1px">[Format(Total,Standard)] [MonedaDocumento]&nbsp;</td>
+		<td align="right" width="150" style="border-bottom-style: dotted; border-bottom-width: 1px">[Format(MontoAplicado,Standard)] MXN&nbsp;</td>
+	</tr>
+	</DETAIL>
+	<tr>
+		<td colspan="2" bgcolor="#000080" align=right><font color="#FFFFFF"><b>Total&nbsp;</b></font></td>
+		<td bgcolor="#000080" align=right><font color="#FFFFFF"><b>[Format(TotalAplicado,Standard)] 
+		MXN</b>&nbsp;</font></td>
+	</tr>
+</table>
+<br>
+Agradecemos tome en cuenta la siguiente información
+
+
+</body>
+
+</html>

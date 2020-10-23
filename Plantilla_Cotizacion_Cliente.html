@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="es">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title></title>
+    <style type="text/css">
+        html, body {
+            width:99%;
+            margin:0px;
+            padding:0px;
+	    font-family:Arial;
+        }
+        .tblHeader,.tblContent,.tblTotales {
+            width:100%;
+        }
+	table td{
+	padding:3px;
+	}
+        .tdCenter {
+            text-align:center;        
+        }
+        .clsBackGray {
+            background-color: #D6DBDF ;
+        }
+        .clsFontLarge {
+            font-size:large;
+            font-weight:bold;
+        }
+         .tblContent td, .tblTotales td {
+            border: 1px solid black;
+        }
+        .minW1 {
+            min-width:300px;
+        }
+        .clsMaxW {
+            width:100%;
+        }
+        .clsRef {
+            color:red;
+        }
+        .clsTextRight {
+            text-align:right;
+        }
+        .wrapper {
+            padding:15px;
+        }
+	.collapse{
+	 border-collapse:collapse;
+	}
+	.clsBold{
+	font-weight:bold;
+	}
+	@media print{
+		html,body{
+		font-size:smaller;
+		}
+		.clsFontLarger{
+		font-size:large;
+		}
+		.clsFontLarge {
+            	font-size: medium;
+            	font-weight: bold;
+        	}
+	}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <table class="tblHeader">
+            <tr>
+                <td class="tdCenter"><span class="">[EmisorNombre]</span></td>
+                <td class="minW1 clsBackGray clsFontLarge tdCenter" rowspan="2">
+				Cotizacion [Serie][Folio]</td>
+            </tr>
+            <tr>
+                <td class="tdCenter clsBold">[EmisorRfc]</td>
+
+            </tr>
+            <tr>
+                <td class="tdCenter clsBold">
+				[EmisorRegimenFiscal]<br/>
+				[EmisorDomicilioFiscalCalle] 
+				[EmisorDomicilioFiscalNoExterior],[EmisorDomicilioFiscalNoInterior],[EmisorDomicilioFiscalColonia],<br/>
+				C.P.[EmisorDomicilioFiscalCodigoPostal],[EmisorDomicilioFiscalMunicipio],[EmisorDomicilioFiscalEstado],[EmisorDomicilioFiscalPais]
+		<br/>
+		
+		</td>
+                <td>
+                    <table class="clsMaxW">
+                        <tr>
+                            <td class="clsFontLarge clsBackGray">Cotización </td>
+                            <td class="clsFontLarge clsBackGray tdCenter">
+							[Serie][Folio]</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Fecha y hora de elaboración
+                            </td>
+                            <td class="">
+                                [FechaDocumento]
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdCenter clsBold">
+		
+				Teléfonos:[EmisorTelefono]<br/>
+		</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tdCenter"><strong>Email:</strong> [EmisorEmail]</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tdCenter"><strong>Lugar y Fecha de Elaboración:</strong> 
+				[EmisorDomicilioFiscalMunicipio],[EmisorDomicilioFiscalEstado] a 
+				[FechaDocumento]</td>
+                <td></td>
+            </tr>
+        </table>
+        <hr />
+        <br />
+        En atención a su solicitud, tengo el gusto de presentar a su amable 
+		consideración el presupuesto solicitado:
+        <br /><br />
+        <table class="tblContent collapse">
+            <tr>
+                <td class="clsBackGray clsFontLarge">
+                    Cliente:
+                </td>
+            </tr>
+            <tr>
+                <td class="">
+		    	[ReceptorRfc]<br/>
+                    [ReceptorNombre]
+                </td>
+            </tr>
+        </table>
+	<br/>
+        <!--Tabla detalles-->
+        <table class="tblContent collapse" > 
+                <tr class="clsBackGray clsFontLarge tdCenter">
+                    <td>Clave</td>
+                    <td>Cantidad</td>
+                    <td>Unidad</td>
+                    <td>Descripción</td>
+                    <td>Precio</td>
+                    <td>Importe</td>
+                </tr>
+		<DETAIL>
+                <tr class="">
+                    <td>[NumeroIdentificacion]</td>
+                    <td class="clsTextRight">[Cantidad]&nbsp;</td>
+                    <td>[UnidadDeMedida]</td>
+                    <td>[Descripcion]</td>
+                    <td class="clsTextRight">$[Format(ValorUnitario,#,##0.00)]&nbsp;</td>
+                    <td class="clsTextRight">$[Format(Importe,#,##0.00)]&nbsp;</td>
+                </tr>
+		</DETAIL>
+        </table>
+	<br/><br/>
+        <!--Tabla totales-->
+        <table class="tblTotales collapse">
+            <tr>
+                <td class="clsBackGray clsFontLarge" style="width:75%;">Cantidad 
+				con letra</td>
+                <td class="clsBackGray clsFontLarge">Subtotal</td>
+                <td class="clsTextRight">$[Format(Subtotal,#,##0.00)]&nbsp;</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="">
+                    [CantidadConLetra]
+                </td>
+                <td class="clsBackGray clsFontLarge">(+) IVA %16</td>
+                <td class="clsTextRight">
+				$[Format(TotalImpuestosTrasladados,#,##0.00)]&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="clsBackGray clsFontLarge">TOTAL</td>
+                <td class="clsTextRight">$[Format(Total,#,##0.00)]&nbsp;</td>
+            </tr>
+        </table>
+        <hr />
+        <div style="min-height:100px;">
+
+        </div>
+        <div style="width:40%;min-height:250px; float:left;">
+            <strong>Terminos y observaciones</strong>
+            <br />
+            <br />
+			[Comments]
+        </div>
+        <div style="width:59%;min-height:250px; float:left; text-align:center; ">
+            <hr>
+            <span style="text-align:center;" class="">[NombreVendedorDocumento]</span><br />
+            Firma vendedor
+            <div style="min-height:80px;"></div>
+            <hr>
+            <span style="text-align:center;" class="">[ReceptorNombre]</span><br />
+            Firma Autorización
+        </div>
+    </div>
+</body>
+</html>

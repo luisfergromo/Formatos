@@ -1,0 +1,219 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>
+Factura</title><style><!--          td {            vertical-align: top;            border-color: #808080;          /*            border-bottom-style: solid;            border-bottom-width: 1px;           */            padding-left: 0.02in;            padding-right: 0.02in;            padding-top: 0.02in;            padding-bottom: 0.02in;          }          .vcenter {            vertical-align: middle;          }          .hcenter {            text-align: center;          }          .hleft {            text-align: left;          }          .hright {            text-align: right;          }--></style></head><body>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" style="font-family: Arial; font-size: 7pt; text-align: left; background: white; border-left-width:0px; border-right-width:0px"><tr>	
+	<td colspan="2" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+	<font size="1">ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI.</font><br>	
+	<font size="1">EMISOR:</font><font color="#333333"><b><font face="Segoe UI" size="1"><span id="Emisor_nombre">[EmisorNombre]</span></font></b></font></td>	
+	<td colspan="2" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+	<p style="text-align: right">		
+                    <font face="Segoe UI"><b><font style="font-size: 9pt">
+					<span id="Comprobante_serie">[Serie]</span> 
+					<span id="Comprobante_folio">[Folio]</span></font></b></font></td>	</tr><tr>		
+			<td colspan="4" style="vertical-align: bottom; border-color: #808080; padding: 0.02in" height="20">		<hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080"></td></tr><tr>
+	<td width="13%" class="vcenter" style="vertical-align: middle">		<p style="text-align: center">		
+	<img border="0" src="[LogoEmpresa]"></td>		
+	<td width="37%" style="vertical-align: top; border-color: #808080; padding: 0.02in">		
+	<p>
+                <font color="#333333">
+                    <b>
+                        <font face="Segoe UI" size="2"><span id="Emisor_nombre">[EmisorNombre]</span></font><br />
+	                    <font face="Segoe UI" style="font-size: 9pt"><span id="Emisor_rfc">[EmisorRfc]</span></font></b></font><b><br>
+	<br>
+	DOMICILIO FISCAL:</b><br>
+	                    <font face="Segoe UI" color="#333333" style="font-size: 8pt">		                    
+                            <span id="DomicilioFiscal_calle">[EmisorDomicilioFiscalCalle]</span> <span id="DomicilioFiscal_noExterior">[EmisorDomicilioFiscalNoExterior],</span> <span id="DomicilioFiscal_noInterior">[EmisorDomicilioFiscalNoInterior]</span><br /><span id="DomicilioFiscal_estado">[EmisorDomicilioFiscalEstado],</span> <span id="DomicilioFiscal_municipio">[EmisorDomicilioFiscalMunicipio],</span> <span id="DomicilioFiscal_colonia">[EmisorDomicilioFiscalColonia],</span> <span id="DomicilioFiscal_codigoPostal">[EmisorDomicilioFiscalCodigoPostal]</span><br />
+					<span id="DomicilioFiscal_pais">[EmisorDomicilioFiscalPais]</span></font><span id="DomicilioFiscal_pais"><font face="Segoe UI" color="#333333" style="font-size: 8pt"><br>
+                        </font>
+                    </span><br>
+	
+	<br>
+	<b>REGIMEN FISCAL:</b><br>
+	   <font face="Segoe UI" color="#333333" style="font-size: 8pt"><span id="RegimenFiscal_Regimen">[EmisorRegimenFiscal]</span>
+	   <br></font>
+	<b>CONDICIONES:&nbsp;</b><font face="Segoe UI" color="#333333"><span id="Comprobante_condicionesDePago">[CondicionPago]
+				</span></font><br>
+	<b>METODO DE PAGO:&nbsp;</b><font face="Segoe UI" color="#333333"><span id="Comprobante_metodoDePago">[MetodoDePago]</span>&nbsp;<span id="Comprobante_metodoDePagoEnLetras">- [MetodoDePagoEnLetras]</span></font><br>
+				<b>NUMERO DE CUENTA DE PAGO: </b><font face="Segoe UI" color="#333333"><span id="Comprobante_NumCtaPago">[NoCtaPago]</span></font></td>		
+	
+	<td width="30%" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+	            <b>TIPO DE COMPROBANTE: </b>Ingreso<br>
+	            <b>FOLIO FISCAL:</b> 		
+	            <font face="Segoe UI">
+                    <font style="font-size: 8pt">
+                        <span id="TimbreFiscalDigital_UUID">[Uuid]</span>
+                    </font><br>
+                 </font>
+	         
+                <b>FECHA Y HORA DE CERTIFICACION:</b> 		
+	            <font face="Segoe UI">
+                    <font style="font-size: 8pt">
+                    	<span id="TimbreFiscalDigital_FechaTimbrado" typeof="DateTime">[FechaTimbrado]</span>
+				<br>
+                    </font>
+                </font>  
+                
+	            <b>NUMERO DE SERIE DEL CERTIFICADO DEL SAT: </b>		
+	            <font face="Segoe UI">
+                    <font style="font-size: 8pt">
+                        <span id="TimbreFiscalDigital_noCertificadoSAT">[NoCertificadoSAT]</span>
+                     </font><br>
+                 </font>
+                 
+	           <b>FECHA Y HORA DE EMISIÓN: </b>		
+	            <font face="Segoe UI">
+                    <font style="font-size: 8pt">
+                        <span id="Comprobante_fecha" typeof="DateTime">[FechaEmision]</span>
+                    </font>
+                    </font><br>                                
+	            
+	            <b>NUMERO DE SERIE DEL CSD DEL EMISOR:</b> 		
+	            <font face="Segoe UI">
+                    <span style="font-size: 8pt">
+                        <span id="Comprobante_noCertificado">[NoCertificado]</span>
+                    </span>
+	            </font> <br>
+	&nbsp;<p><b><span style="font-size: 8pt">FACTURA FOLIO:</span></b><font face="Segoe UI"><b><span style="font-size: 8pt">&nbsp;</span><font style="font-size: 10pt" size="2"><span id="Comprobante_serie">[Serie]</span> <span id="Comprobante_folio">[Folio]</span></font></b></font></td>		
+	<td width="19%" style="vertical-align: top; border-color: #808080; padding: 0.02in"><b>
+	LUGAR DE EXPEDICION:</b><br>		<font face="Segoe UI">
+	<font color="#333333" style="font-size: 9pt">
+	<span id="Comprobante_LugarExpedicion">[LugarExpedicion]</span></font><br />
+	                <span style="font-size: 8pt"><span id="ExpedidoEn_calle">[EmisorExpedidoEnCalle]</span> <span id="ExpedidoEn_noExterior">[EmisorExpedidoEnNoExterior],</span> <span id="ExpedidoEn_noInterior">[EmisorExpedidoEnNoInterior]</span><br /><span id="ExpedidoEn_estado">[EmisorExpedidoEnEstado],</span> <span id="ExpedidoEn_municipio">[EmisorExpedidoEnMunicipio],</span> <span id="ExpedidoEn_colonia">[EmisorExpedidoEnColonia]</span><br /><span id="ExpedidoEn_codigoPostal">[EmisorExpedidoEnCodigoPostal]</span><br /><span id="ExpedidoEn_pais">[EmisorExpedidoEnPais]</span></span></font></td></tr><tr>		
+		<td colspan="4" style="vertical-align: top; border-color: #808080; padding: 0.02in" height="19">		<hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080"></td></tr><tr style="page-break-inside : avoid">
+		<td width="13%" class="hcenter">		
+	<p>
+                <font style="font-size: 9pt" size="2">
+                    <img id="CodigoBidimensional" src="[CodigoBidimensional]" width="146" height="156"></font></td>		
+	<td style="vertical-align: middle; border-color: #808080; padding: 0.02in">
+	<p><b>PARA: </b><br>
+            	<span style="font-size: 8pt">
+                    <span id="Receptor_nombre">[ReceptorNombre]</span><br/>
+                    <span id="Receptor_rfc">[ReceptorRfc]</span>
+                </span><br /><b><br>
+	DOMICILIO FISCAL:<br>
+	</b>
+                    <font style="font-size: 8pt" size="2">
+	                    <span id="Domicilio_calle">[ReceptorDomicilioCalle]</span> <span id="Domicilio_noExterior">[ReceptorDomicilioNoExterior],</span> <span id="Domicilio_noInterior">[ReceptorDomicilioNoInterior]</span><br /><span id="Domicilio_estado">[ReceptorDomicilioEstado],</span> <span id="Domicilio_municipio">[ReceptorDomicilioMunicipio],</span> <span id="Domicilio_colonia">[ReceptorDomicilioColonia]</span><br /><span id="Domicilio_codigoPostal">[ReceptorDomicilioCodigoPostal]</span><br /><span id="Domicilio_pais">[ReceptorDomicilioPais]</span>
+                    </font>
+	</p>
+		</td>
+	<td style="vertical-align: middle; border-color: #808080; padding: 0.02in" colspan="2">
+	<b><span style="font-size: 8pt">NOTAS:</span></b><span style="font-size: 8pt">
+	</span>
+                    <font style="font-size: 8pt" size="2"> 
+	<span id="Comentarios">[Comments]</span></font></td>
+	</tr>
+	<tr>		
+		<td colspan="4" style="border-bottom:medium none #808080; vertical-align: top; padding: 0.02in; border-left-color:#808080; border-right-color:#808080; border-top-color:#808080">		<hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080"></td></tr><tr>		
+			<td colspan="4" style="border:medium none #808080; vertical-align: top; padding: 0.02in" height="101">		
+                <table border="1" cellpadding="2" cellspacing="0" style="font-family: Arial; font-size: 7pt; text-align: left; background: white; width: 100%;" id="table1">
+                    <thead>
+                        <tr>
+                            <th width="5%">
+                    		    <font color="#333333">CANTIDAD</font>
+                            </th>
+                    	    <th width="5%" align="center">
+                                <font color="#333333">UNIDAD DE MEDIDA</font>
+                            </th>			
+	                        <th width="5%">
+                                <font color="#333333">CODIGOS</font>
+                            </th>			
+	                        <th width="55%" class="hleft">
+                                <font color="#333333">DESCRIPCION</font>
+                            </th>
+                    	    <th width="4%" align="center">
+                                <font color="#333333">VALOR UNITARIO</font>
+                            </th>
+                    	    <th width="7%" align="center">
+                                IMPORTE
+                            </th>
+                        </tr>
+                    </thead>
+                    
+                    <DETAIL id="DetalleConceptos">
+                    <DETAIL>
+                        <tr id="Concepto" style="page-break-inside : avoid">
+                            <td class="hcenter" width="5%" style="vertical-align: middle">		
+		                        <font face="Segoe UI" style="font-size: 8pt"><span id="cantidad">&nbsp;[Cantidad]</span></font>
+                            </td>
+                        	<td class="hcenter" width="5%" style="vertical-align: middle">
+                                <font face="Segoe UI" style="font-size: 8pt">
+								<span id="unidad">[UnidadDeMedida]</span></font>
+                            </td>		
+		                    <td class="hcenter" width="5%" style="vertical-align: middle">
+                            	<font face="Segoe UI" style="font-size: 8pt">
+								<span id="noIdentificacion">[NumeroIdentificacion]</span></font>
+
+                            </td>		
+		                    <td width="55%" style="vertical-align: middle; border-color: #808080; padding: 0.02in">		
+		                        <font face="Segoe UI" style="font-size: 8pt">
+									<span id="descripcion">[Descripcion]</span></font></td>
+                            <td class="hright" width="4%" style="vertical-align: middle">
+                                <font face="Segoe UI" style="font-size: 8pt">
+                                	<span id="valorUnitario" typeof="Currency">&nbsp;[Format(ValorUnitario,#,##0.00)]&nbsp;</span>
+                                </font>
+                            	<td class="hright" width="7%" style="vertical-align: middle">		
+                                <font face="Segoe UI" style="font-size: 8pt"><span id="importe" typeof="Currency">&nbsp;[Format(Importe,#,##0.00)]&nbsp;</span></font>
+                            </td>
+                        </tr>
+                    </DETAIL>                 
+                </table>
+			</td>		</tr>				<tr>
+			<td colspan="1" height="85" style="border-top:medium none #808080; vertical-align: top; padding: 0.02in; border-left-color:#808080; border-right-color:#808080; border-bottom-color:#808080"></td>			
+			<td height="85" colspan="3" style="border-top:medium none #808080; vertical-align: top; padding: 0.02in; border-left-color:#808080; border-right-color:#808080; border-bottom-color:#808080">			
+			<table border="0" cellspacing="0" cellpadding="2" align="right" style="font-family: Arial; font-size: 7pt; text-align: left; background: white" width="221"><tr>
+				<th align="right" width="83">
+				<font style="font-size: 9pt" color="#333333">SUBTOTAL:</font></th>
+				<th align="right" width="169">		
+				<span style="font-size: 8pt" id="Comprobante_subTotal" typeof="Currency">[Format(SubTotal,#,##0.00)]</span></th></tr><tr>
+					<th class="hright" height="17" width="83">					
+					<font style="font-size: 9pt" color="#333333">DESCUENTO:</font></th>
+					<th class="hright" height="17" width="169">		
+					<span style="font-size: 8pt" id="Comprobante_descuento" typeof="Currency">[Format(DescuentoTotal,#,##0.00)]</span></th></tr><tr>
+					<th class="hright" width="83">
+	<font style="font-size: 9pt" color="#333333">IVA:</font></th>
+					<th class="hright" width="169">		
+					<span style="font-size: 8pt" id="Impuestos_totalImpuestosTrasladados" typeof="Currency">[Format(TotalImpuestosTrasladados,#,##0.00)]</span></th></tr><tr>
+					<th class="hright" width="83">
+	                    	<font color="#333333" style="font-size: 9pt">RETENCIONES:</font>
+                        </th><th class="hright" width="169">		
+					<span style="font-size: 8pt" id="Impuestos_totalImpuestosRetenidos" typeof="Currency">[Format(TotalImpuestosRetenidos,#,##0.00)]</span></th></tr><tr>
+					<th colspan="2" height="21">					<hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080"></th></tr><tr>
+					<th class="hright" width="83">
+                        	<font color="#333333">
+                                <span style="font-size: 10pt"><b>TOTAL</b></span>
+                            </font>
+                        </th><th class="hright" width="169">		
+                            <span style="font-size: 10pt"><b>
+                                <span id="Comprobante_total" typeof="Currency">
+							[Format(Total,#,##0.00)] </span></b>
+                            </span>
+                        </th></tr></table></td>			</tr><tr>			<td colspan="4" align="right" style="vertical-align: top; border-color: #808080; padding: 0.02in">						
+		        <font face="Segoe UI" style="font-size: 9pt; font-weight: 700"><span id="CantidadConLetra">[CantidadConLetra]</span><br /></font>
+                <font size="2" face="Segoe UI">MONEDA: <b><span id="Comprobante_Moneda">[Moneda]</span></b> TIPO DE CAMBIO: <b><span id="Comprobante_TipoCambio">[Format(TipoCambio,#,##0.00)]</span></b> <span id="Comprobante_formaDePago">[FormaDePago]</span></font>
+            </td></tr><tr>			<td colspan="4" style="vertical-align: top; border-color: #808080; padding: 0.02in">			<table border="1" width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial; font-size: 7pt; text-align: left; background: white"><thead><th class="hcenter">RETENCIONES LOCALES</th><th class="hcenter">TRASLADOS LOCALES</th><th class="hcenter">RETENCIONES FEDERALES</th><th class="hcenter">TRASLADOS FEDERALES</th></thead><tr>				<td style="vertical-align: top; border-color: #808080; padding: 0.02in">ninguna</td>				<td style="vertical-align: top; border-color: #808080; padding: 0.02in">ninguno</td>				<td style="vertical-align: top; border-color: #808080; padding: 0.02in">
+				<span id="Impuestos_totalImpuestosRetenidos" typeof="Currency">[TotalImpuestosRetenidos]</span></td>
+								<td style="vertical-align: top; border-color: #808080; padding: 0.02in">	
+		IVA:<span id="Impuestos_totalImpuestosTrasladados" typeof="Currency">[TotalImpuestosTrasladados]</span></td></tr></table></td></tr><tr>			
+	<td colspan="4" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+	<b>SELLO DIGITAL DEL SAT:</b><br>
+                <span style="font-size: 8pt; display: block; word-break: break-all">
+                    <font face="Segoe UI"><span id="TimbreFiscalDigital_selloSAT">[selloSAT]</span></font></span><tr>			
+		<td colspan="4" style="vertical-align: top; border-color: #808080; padding: 0.02in">			
+                <hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080">
+            </td></tr></td></tr><tr>			
+		<td colspan="4" style="vertical-align: top; border-color: #808080; padding: 0.02in" height="16">
+		<b>SELLO DIGITAL DEL CFDI:<br>
+		</b>
+                <span style="font-size: 8pt; display: block; word-break: break-all">
+	                <font face="Segoe UI"><span id="TimbreFiscalDigital_selloCFD">[selloCFD]</span></font></span></td></tr><tr>			
+		<td colspan="4" style="vertical-align: top; border-color: #808080; padding: 0.02in">			
+                <hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080">
+            </td></tr><tr>			
+		<td colspan="4" style="vertical-align: top; border-color: #808080; padding: 0.02in" height="33">
+		<b>CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:<br>
+		</b>
+                <span style="font-size: 8pt; display: block; word-break: break-all">
+                    <font face="Segoe UI"><span id="CadenaOriginalComplemento">[cadenaOriginalComplemento]</span></font></span></td></tr><tr>			
+		<td colspan="4" style="vertical-align: top; border-color: #808080; padding: 0.02in" height="16">
+                <hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080">
+            </td></tr></table></body></html>

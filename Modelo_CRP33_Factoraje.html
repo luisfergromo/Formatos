@@ -1,0 +1,651 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>Factura</title>
+<style>
+<!--
+td {
+	vertical-align: top;
+	border-color: #808080;
+/*            border-bottom-style: solid;            border-bottom-width: 1px;           */padding-left: 0.02in;
+	padding-right: 0.02in;
+	padding-top: 0.02in;
+	padding-bottom: 0.02in;
+}
+.vcenter {
+	vertical-align: middle;
+}
+.hcenter {
+	text-align: center;
+}
+.hleft {
+	text-align: left;
+}
+.hright {
+	text-align: right;
+}
+.auto-style1 {
+	text-align: center;
+	font-size: 10pt;
+}
+.auto-style3 {
+	text-align: left;
+	font-size: 16pt;
+}
+.auto-style4 {
+	font-size: 16pt;
+	text-align: center;
+}
+.auto-style6 {
+	font-size: 10pt;
+}
+.auto-style8 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 8pt;
+}
+.auto-style14 {
+	margin-left: 0px;
+	background-color: #F3F3F3;
+}
+.auto-style15 {
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+.auto-style16 {
+	color: #FFFFFF;
+	text-align: left;
+	background-color: #173264;
+}
+.auto-style18 {
+	color: #F1F1F1;
+	border-width: 0px;
+}
+.auto-style23 {
+	color: #333333;
+}
+.auto-style24 {
+	font-size: 7pt;
+	text-align: center;
+	color: #333333;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #E5E5E5;
+}
+.auto-style26 {
+	background-color: #F3F3F3;
+}
+.auto-style27 {
+	background-color: #FFFFFF;
+}
+.auto-style29 {
+	text-align: center;
+	font-size: 7pt;
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 80px;
+}
+.auto-style30 {
+	text-align: left;
+	font-size: 9pt;
+	color: #008000;
+}
+.auto-style31 {
+	color: #008000;
+	font-size: 9pt;
+}
+.auto-style33 {
+	background-color: #F1F1F1;
+}
+.auto-style34 {
+	text-align: center;
+	font-size: 7pt;
+	border-style: none;
+	border-width: medium;
+	margin-left: 80px;
+}
+.auto-style42 {
+	text-align: center;
+	font-size: 7pt;
+	border-left-style: none;
+	border-left-width: medium;
+	border-right-style: none;
+	border-right-width: medium;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+	margin-left: 80px;
+}
+.auto-style43 {
+	text-align: center;
+	font-size: 7pt;
+	border-left-style: none;
+	border-left-width: medium;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+	margin-left: 80px;
+}
+.auto-style44 {
+	text-align: center;
+	font-size: 7pt;
+	border-left-style: none;
+	border-left-width: medium;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+	margin-left: 80px;
+}
+.auto-style45 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 7pt;
+}
+.auto-style46 {
+	text-align: right;
+	font-size: 8pt;
+	color: #333333;
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 80px;
+}
+.auto-style47 {
+	font-family: "Segoe UI";
+	font-size: 9pt;
+	vertical-align: top;
+	font-weight: bold;
+	border-color: #808080;
+	padding: 0.02in;
+}
+.auto-style48 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #008000;
+}
+.auto-style49 {
+	border-width: 0px;
+}
+.auto-style53 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.auto-style56 {
+	font-size: 9pt;
+}
+.auto-style58 {
+	font-size: 7pt;
+	color: #0092FF;
+}
+.auto-style59 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #008000;
+}
+.NormalAzul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #3399FF;
+	font-weight: bold;
+}
+.Normal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.CadenaLarga {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+}
+.auto-style61 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #3399FF;
+	font-weight: bold;
+}
+.auto-style62 {
+	background-color: #D0D0D0;
+}
+.auto-style63 {
+	font-size: 9pt;
+	background-color: #DADADA;
+}
+.auto-style64 {
+	background-color: #DADADA;
+}
+.auto-style65 {
+	font-size: 6pt;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+}
+.auto-style69 {
+	font-size: 6pt;
+	text-align: center;
+	color: #333333;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #E5E5E5;
+}
+.auto-style70 {
+	font-size: 5pt;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+}
+.auto-style71 {
+	color: #173264;
+}
+.auto-style72 {
+	color: #173264;
+	font-weight: bold;
+}
+.auto-style73 {
+	font-size: 7pt;
+	text-align: right;
+}
+.auto-style74 {
+	font-size: 7pt;
+}
+.auto-style75 {
+	font-size: 7pt;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+}
+.auto-style76 {
+	color: #0092FF;
+}
+.auto-style77 {
+	color: #FF2F2F;
+}
+.auto-style78 {
+	font-size: 7pt;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #DADADA;
+}
+.auto-style79 {
+	font-size: 8pt;
+}
+-->
+</style>
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" class="auto-style15" style="font-family: Arial; font-size: 7pt; text-align: left; background: white;" width="100%">
+	<tr>
+		<td class="auto-style3" colspan="3" style="vertical-align: bottom; border-color: #808080; padding: 0.02in; height: 23px;">
+		<table align="center" style="width: 97%">
+			<tr>
+				<td class="auto-style4" style="width: 701px; height: 25px">
+				<table style="width: 100%; height: 112px">
+					<tr>
+						<td style="width: 128px"><img src="[LogoEmpresa]">&nbsp;</td>
+						<td class="auto-style16"><strong><br><br><em>COMPLEMENTO 
+						RECEPCIÓN DE PAGO</em></strong></td>
+					</tr>
+				</table>
+				</td>
+				<td class="hcenter" style="height: 25px">
+				<img height="112" src="[CodigoBidimensional]" style="float: right" width="118"></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="auto-style30" colspan="3" style="vertical-align: bottom; border-color: #808080; padding: 0.02in; height: 23px;">
+		<strong>CFDI-PAGOS</strong></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-color: #808080; padding: 0.02in; width: 17%;">
+		<table class="auto-style62" style="width: 95%; height: 53px">
+			<tr>
+				<td class="auto-style63"><strong>Emisor (Beneficiario)<br>[EmisorNombre]<br>
+				<span class="auto-style58">RFC:</span> </strong>
+				<span class="auto-style8">[EmisorRfc]<strong><br>
+				<span class="auto-style58">Régimen Fiscal:</span> </strong>[EmisorRegimenFiscal33]</span></td>
+			</tr>
+		</table>
+		</td>
+		<td style="vertical-align: top; border-color: #808080; padding: 0.02in; width: 14%;">
+		<table class="auto-style26" style="width: 94%; height: 11px;">
+			<tr>
+				<td class="auto-style63"><strong>Receptor (Ordenante del pago)<br>
+				[ReceptorNombre]<br><span class="auto-style58">RFC:</span>
+				</strong><span class="auto-style8">[ReceptorRfc]<br>
+				<span class="auto-style58"><strong>Residencia Fiscal (Extranjero):</strong></span> 
+				[ResidenciaFiscal33]<br><span class="auto-style58"><strong>Num. 
+				Registro (Extranjero):</strong></span> [NumRegIdTrib]</span></td>
+			</tr>
+		</table>
+		</td>
+		<td style="vertical-align: top; border-color: #808080; padding: 0.02in" width="19%">
+		<table class="auto-style14" style="width: 98%; height: 16px;">
+			<tr>
+				<td class="auto-style64"><span class="auto-style58"><strong>Folio:</strong></span>
+				<span class="auto-style8">[SerieFolioPago]<br>
+				<span class="auto-style58"><strong>Fecha Emisión:</strong></span> 
+				[FechaEmision]<br><span class="auto-style58"><strong>Lugar de Expedición:</strong></span> 
+				[LugarExpedicion33]<br><span class="auto-style58"><strong>Tipo Comprobante:</strong></span> 
+				P - Pago<br><span class="auto-style58"><strong>Folio Fiscal (UUID):</strong></span>
+				</span><span class="auto-style45">[UUID]</span><span class="auto-style8"><br>
+				<span class="auto-style58"><strong>No. Serie Certificado:</strong></span> 
+				[NoCertificadoSAT]<br><span class="auto-style58"><strong>No. Certificado 
+				Emisor:</strong></span> [NoCertificado]<br>
+				<span class="auto-style58"><strong>Clave de Confirmación:</strong></span> 
+				[ClaveConfirmacion33]</span></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" height="19" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+		<hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080">
+		</td>
+	</tr>
+	<tr>
+		<td class="auto-style1" colspan="3" style="border-bottom: medium none #808080; vertical-align: top; padding: 0.02in; border-left-color: #808080; border-right-color: #808080; border-top-color: #808080; height: 20px;">
+		<table align="center" class="auto-style18" style="width: 69%; height: 76px;">
+			<tr>
+				<td class="auto-style24"><strong>CANTIDAD</strong></td>
+				<td class="auto-style24"><strong>CLAVE PROD/SERV</strong></td>
+				<span class="auto-style23">
+				<td class="auto-style24"><strong>CLAVE UNIDAD</strong></td>
+				<td class="auto-style24"><strong>DESCRIPCIÓN</strong></td>
+				<td class="auto-style24" style="width: 96px"><strong>VALOR UNITARIO</strong></td>
+				<td class="auto-style24"><strong>IMPORTE</strong></span></td>
+			</tr>
+			<tr class="auto-style23">
+				<td class="auto-style29">1</td>
+				<td class="auto-style29">84111506</td>
+				<td class="auto-style29">ACT</td>
+				<td class="auto-style29">PAGO</td>
+				<td class="auto-style29" style="width: 96px">$0.00</td>
+				<td class="auto-style29">$0.00</td>
+			</tr>
+			<tr class="auto-style23">
+				<td class="auto-style42"></td>
+				<td class="auto-style42"></td>
+				<td class="auto-style42"></td>
+				<td class="auto-style43"></td>
+				<td class="auto-style46" style="width: 96px"><strong>SUBTOTAL:</strong></td>
+				<td class="auto-style29">$0.00</td>
+			</tr>
+			<tr class="auto-style23">
+				<td class="auto-style34"></td>
+				<td class="auto-style34"></td>
+				<td class="auto-style34"></td>
+				<td class="auto-style44"></td>
+				<td class="auto-style46" style="width: 96px"><strong>TOTAL:</strong></td>
+				<td class="auto-style29">$0.00</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="auto-style1" colspan="3" style="border-bottom: medium none #808080; vertical-align: top; padding: 0.02in; border-left-color: #808080; border-right-color: #808080; border-top-color: #808080; height: 20px;">
+		<table align="left" style="width: 99%">
+			<tr>
+				<td class="auto-style31" style="height: 21px"><strong>COMPLEMENTO 
+				DE PAGOS</strong></td>
+			</tr>
+			<tr>
+				<td class="auto-style56"><strong>Información Cliente-Proveedor</strong></td>
+			</tr>
+			<tr>
+				<td class="auto-style27">
+				<table align="center" class="auto-style26" style="width: 96%; height: 32px;">
+					<tr>
+						<td class="auto-style64" style="width: 366px">
+						<span class="auto-style58"><strong>RFC Emisor Cuenta Ordenante:</strong></span>
+						<span class="auto-style8">[RfcEmisorCtaOrd]<br>
+						<span class="auto-style58"><strong>Nombre Banco Ordenante:</strong></span> [NomBancoOrdExt]<br>
+						<span class="auto-style58"><strong>Cuenta Ordenante:</strong></span> 
+						[CtaOrdenante]</span></td>
+						<td class="auto-style64"><span class="auto-style58">
+						<strong>RFC Emisor Cuenta Beneficiario:</strong></span>
+						<span class="auto-style8">[RfcEmisorCtaBen]<br>
+						<span class="auto-style58"><strong>Cuenta Beneficiario:</strong></span> 
+						[CtaBeneficiario]</span></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="auto-style1" colspan="3" style="border-bottom: medium none #808080; vertical-align: top; padding: 0.02in; border-left-color: #808080; border-right-color: #808080; border-top-color: #808080; height: 20px;">
+		<hr style="border-style: none; border-color: inherit; border-width: 0; height: -13px; width: 100%; color: #808080; background-color: #808080">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" height="101" style="border: medium none #808080; vertical-align: top; padding: 0.02in">
+		<table style="width: 100%; height: 91px">
+			<tr>
+				<td class="auto-style56" style="height: 18px"><strong>Información 
+				del Depósito</strong></td>
+			</tr>
+			<tr>
+				<td>
+				<table style="width: 100%; height: 97px;">
+					<tr>
+						<td style="width: 325px">
+						<table align="center" class="auto-style33" style="width: 94%">
+							<tr>
+								<td class="auto-style64" style="height: 1px; width: 640px">
+								<span class="auto-style58"><strong>Fecha de Pago:</strong></span>
+								<span class="auto-style8">[Format(Pago_FechaPago,dd-mmm-yyyy)]&nbsp;[Format(Pago_FechaPago,HH:NN:SS)]<br><span class="auto-style58"><strong>Forma 
+								de Pago:</strong></span> [Pago_FormaDePagoP]<br>
+								<span class="auto-style58"><strong>Moneda:</strong></span> 
+								[Pago_MonedaP]<br><span class="auto-style58">
+								<strong>Tipo de Cambio:</strong></span> [Pago_TipoCambioP]<br>
+								<span class="auto-style58"><strong>Monto:</strong></span> 
+								[Format(Pago_Monto,Standard)]<br>
+								<span class="auto-style58"><strong>No. Operación:</strong></span> 
+								[Pago_NumOperacion]</span></td>
+							</tr>
+						</table>
+						</td>
+						<td style="width: 325px">
+						<table align="center" class="auto-style64" style="width: 94%">
+							<tr>
+								<td class="auto-style6"><strong><em>Factoraje</em></strong></td>
+								
+							</tr>
+							<tr>
+								<td class="auto-style64" style="height: 1px; width: 640px">
+								<span class="auto-style8">
+								<span class="auto-style58"><strong>Forma 
+								de Pago:</strong></span> 17 - Compensaci&oacute;n<br>
+								<span class="auto-style58"><strong>Moneda:</strong></span> 
+								[Factoraje_MonedaP]<br><span class="auto-style58">
+								<strong>Tipo de Cambio:</strong></span> [Factoraje_TipoCambioP]<br>
+								<span class="auto-style58"><strong>Monto:</strong></span> 
+								[Format(Factoraje_Monto,Standard)]<br>
+								</span></td>
+							</tr>
+						</table>
+						</td>
+						<td>
+						<table align="center" class="auto-style64" style="width: 99%">
+							<tr>
+								<td class="auto-style6"><strong><em>SPEI Digital</em></strong></td>
+							</tr>
+							<tr>
+								<td><span class="auto-style58"><strong>&nbsp;Tipo 
+								Cadena Pago:</strong></span>
+								<span class="auto-style8"><strong>[Pago_TipoCadPago]</strong></span></td>
+							</tr>
+							<tr>
+								<td class="auto-style45" style="height: 3px">
+								<span style="display: block; word-break: break-all">
+								<span class="auto-style61">&nbsp;Cadena original 
+								del comprobante de pago:</span><br>
+								<span class="CadenaLarga">&nbsp;[Pago_CadPago]</span><br>
+								<span class="auto-style61">&nbsp;Sello de Pago:</span><br>
+								<span class="CadenaLarga">&nbsp;[Pago_SelloPago]</span>
+								</span></td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="auto-style47" colspan="3">
+		<table style="width: 100%">
+			<tr>
+				<td class="auto-style48">
+				<hr style="border-style: none; border-color: inherit; border-width: 0; height: -15px; width: 100%; color: #808080; background-color: #808080">
+				</td>
+			</tr>
+			<tr>
+				<td class="auto-style59"><strong>DOCUMENTOS-RELACIONADOS<table class="auto-style49" style="width: 100%">
+					<tr>
+						<td class="auto-style69"><strong>ID Documento</strong></td>
+						<td class="auto-style69"><b>Serie</b></td>
+						<td class="auto-style69"><b>Folio</b></td>
+						<td class="auto-style69"><strong>Moneda </strong></td>
+						<td class="auto-style69"><strong>Tipo Cambio</strong></td>
+						<td class="auto-style69"><strong>Método de Pago</strong></td>
+						<td class="auto-style69"><strong>No. Parcialidad</strong></td>
+						<td class="auto-style69"><strong>Importe Saldo Anterior</strong></td>
+						<td class="auto-style69"><strong>Importe Pagado</strong></td>
+						<td class="auto-style69"><strong>Importe Saldo Insoluto</strong></td>
+					</tr>
+			<DETAIL>
+					<tr class="auto-style53">
+						<td class="auto-style70">[DR_IdDocumento]</td>
+						<td class="auto-style65">[DR_Serie]</td>
+						<td class="auto-style65">[DR_Folio]</td>
+						<td class="auto-style65">[DR_MonedaDR]</td>
+						<td class="auto-style65">[Format(DR_TipoCambioDR,0.######)]</td>
+						<td class="auto-style65">[DR_MetodoDePagoDR]</td>
+						<td class="auto-style65">[DR_NumParcialidad]</td>
+						<td class="auto-style65">[Format(DR_ImpSaldoAnt,Standard)]</td>
+						<td class="auto-style65">[Format(DR_ImpPagado,Standard)]</td>
+						<td class="auto-style65">[Format(DR_ImpSaldoInsoluto,Standard)]</td>
+					</tr>
+					<tr class="auto-style53">
+						<td class="auto-style70">[DR_IdDocumento]</td>
+						<td class="auto-style65">[DR_Serie]</td>
+						<td class="auto-style65">[DR_Folio]</td>
+						<td class="auto-style65">[DR_MonedaDR]</td>
+						<td class="auto-style65">[Format(DR_TipoCambioDR,0.######)]</td>
+						<td class="auto-style65">[DR_MetodoDePagoDR]</td>
+						<td class="auto-style65">[Factoraje_NumParcialidad]</td>
+						<td class="auto-style65">[Format(Factoraje_ImpSaldoAnt,Standard)]</td>
+						<td class="auto-style65">[Format(Factoraje_ImpPagado,Standard)]</td>
+						<td class="auto-style65">[Format(Factoraje_ImpSaldoInsoluto,Standard)]</td>
+					</tr>
+			</DETAIL>
+				</table>
+				</strong></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="vertical-align: top; border-color: #808080; padding: 0.02in;">
+		<table style="width: 100%">
+			<tr>
+				<td class="auto-style31"><strong>CFDI-RELACIONADOS</strong></td>
+			</tr>
+			<tr>
+				<td style="height: 24px">
+				<table style="width: 100%; height: 19px;">
+					<tr>
+						<td style="width: 465px">
+						<table style="width: 100%; height: 0px">
+							<tr>
+								<td class="auto-style73" style="width: 131px">
+								<strong>TIPO RELACIÓN:<br>CFDI RELACIONADO:</strong></td>
+								<td class="auto-style53" style="width: 328px">
+								<span class="auto-style79">[CFDTipoRelacion]</span><br class="auto-style74">
+								<span class="auto-style74">[CFDUUIDRelacionados]</span></td>
+							</tr>
+						</table>
+						</td>
+						<td>
+						<table class="auto-style49" style="width: 100%">
+							<tr>
+								<td class="auto-style78" style="height: 17px">
+								<strong>Este documento es una representación impresa 
+								de un CFDI</strong></td>
+							</tr>
+							<tr>
+								<td class="auto-style75" style="height: 17px">
+								<strong>Emitido desde: </strong>
+								<span class="auto-style76"><strong>CONTPAQi®</strong></span>
+								<span class="auto-style77"><strong><em>Comercial 
+								Start-Pro</em></strong></span></td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+		<hr style="border-style: none; border-color: inherit; border-width: 0; height: -15px; width: 100%; color: #808080; background-color: #808080">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+		<span class="auto-style72">S</span><span class="auto-style71"><strong>ELLO 
+		DIGITAL DEL SAT</strong></span><span class="auto-style72">:</span><br>
+		<span style="font-size: 8pt; display: block; word-break: break-all">
+		<font face="Segoe UI"><span id="TimbreFiscalDigital_selloSAT">[selloSAT]</span></font></span></td>
+	</tr>
+	<tr>
+		<td colspan="3" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+		<hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080">
+		</td>
+	</tr>
+	</td>
+	</tr>
+	<tr>
+		<td colspan="3" height="16" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+		<b><span class="auto-style71">SELLO DIGITAL DEL CFDI:</span><br class="auto-style23">
+		</b><span style="font-size: 8pt; display: block; word-break: break-all">
+		<font face="Segoe UI"><span id="TimbreFiscalDigital_selloCFD">[selloCFD]</span></font></span></td>
+	</tr>
+	<tr>
+		<td colspan="3" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+		<hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" height="33" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+		<b><span class="auto-style71">CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN 
+		DIGITAL DEL SAT:</span><br></b>
+		<span style="font-size: 8pt; display: block; word-break: break-all">
+		<font face="Segoe UI"><span id="CadenaOriginalComplemento">[cadenaOriginalComplemento]</span></font></span></td>
+	</tr>
+	<tr>
+		<td colspan="3" height="16" style="vertical-align: top; border-color: #808080; padding: 0.02in">
+		<hr style="height: 1px; width: 100%; color: #808080; border: 0 none; background-color: #808080">
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

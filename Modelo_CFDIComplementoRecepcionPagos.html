@@ -1,0 +1,304 @@
+<html>
+
+<head>
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+<title>[Documento]</title>
+<style type="text/css">.Titulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #008000;
+	font-weight: bold;
+}
+.Subtitulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+}
+.Normal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.NormalAzul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #3399FF;
+	font-weight: bold;
+}
+.CadenaLarga {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+}
+</style>
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" style="font-family: Arial; font-size: 7pt; text-align: left; background: white; border-left-width: 0px; border-right-width: 0px" width="100%">
+	<tr style="page-break-inside : avoid">
+		<td class="hcenter">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="15%"><img border="0" src="[LogoEmpresa]"></td>
+				<td colspan="3" style="vertical-align: middle" width="60%">
+				<p align="center"><b><font face="Segoe UI" size="5">Complemento 
+				de recepción de Pago</font></b></p>
+				</td>
+				<td width="15%">
+				<img id="CodigoBidimensional" height="156" src="[CodigoBidimensional]" width="146"></td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="26%" class="Titulo">CFDI-Pagos</td>
+				<td width="2%">&nbsp;</td>
+				<td width="28%">&nbsp;</td>
+				<td width="2%">&nbsp;</td>
+				<td width="31%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="26%" class="Subtitulo">Emisor (Beneficiario)</td>
+				<td width="2%">&nbsp;</td>
+				<td width="28%" class="Subtitulo">Receptor (Ordenante del pago)</td>
+				<td width="2%">&nbsp;</td>
+				<td width="31%" class="Subtitulo">Documento</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="26%" valign="top">
+				<span class="Normal">&nbsp;[EmisorNombre]</span><br>
+				<span class="NormalAzul">&nbsp;RFC:</span><span class="Normal">&nbsp;[EmisorRfc]</span><br>
+				<span class="NormalAzul">&nbsp;Régimen Fiscal:</span><span class="Normal">&nbsp;[EmisorRegimenFiscal33]</Span>
+				</td>
+				
+				<td width="2%">&nbsp;</td>
+				
+				<td bgcolor="#F7F7F7" width="28%" valign="top">
+				<span class="Normal">&nbsp;[ReceptorNombre]</span><br>
+				<span class="NormalAzul">&nbsp;RFC:</span><span class="Normal">&nbsp;[ReceptorRfc]</span><br>
+				<span class="NormalAzul">&nbsp;Residencia Fiscal (Extranjero):</span><span class="Normal">&nbsp;[ResidenciaFiscal33]</span><br>
+				<span class="NormalAzul">&nbsp;Num. Registro (Extranjero):</span><span class="Normal">&nbsp;[NumRegIdTrib]</span>
+				</td>
+				
+				<td width="2%">&nbsp;</td>
+				
+				<td bgcolor="#F3F3F3" width="31%">
+				<span class="NormalAzul">&nbsp;Folio:</span><span class="Normal">&nbsp;[SeriePago][FolioPago]</span><br>
+				<span class="NormalAzul">&nbsp;Fecha Emisión:</span><span class="Normal">&nbsp;[FechaEmision]</span><br>
+				<span class="NormalAzul">&nbsp;Lugar Expedición:</span><span class="Normal">&nbsp;[LugarExpedicion33]</span><br>
+				<span class="NormalAzul">&nbsp;Tipo Comprobante:</span><span class="Normal">&nbsp;P-Pago</span><br>
+				<span class="NormalAzul">&nbsp;Clave Confirmación:</span><span class="Normal">&nbsp;[ClaveConfirmacion33]</span><br>
+				<span class="NormalAzul">&nbsp;Folio Fiscal:</span><span class="Normal">&nbsp;[UUID]</span><br>
+				<span class="NormalAzul">&nbsp;No. Serie Certificado:</span><span class="Normal">&nbsp;[NoCertificadoSAT]</span><br>
+				<span class="NormalAzul">&nbsp;No. Certificado Emisor:</span><span class="Normal">&nbsp;[NoCertificado]</span>
+				<br>
+				&nbsp;
+				</td>
+				
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td colspan="6" width="94%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td colspan="6" width="94%">&nbsp;</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="45%" class="Titulo">Complemento de pagos</td>
+				<td width="2%">&nbsp;</td>
+				<td width="43%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="45%" class="Subtitulo">Información Cliente-Proveedor</td>
+				<td width="2%">&nbsp;</td>
+				<td width="43%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="45%" valign="top">
+				<span class="NormalAzul">&nbsp;RFC Emisor Cuenta ordenante:</span><span class="Normal">&nbsp;[RfcEmisorCtaOrd]</span><br>
+				<span class="NormalAzul">&nbsp;Nombre Banco ordenante :</span><span class="Normal">&nbsp;[NomBancoOrdExt]</span><br>
+				<span class="NormalAzul">&nbsp;Cta. Ordenante:</span><span class="Normal">&nbsp;[CtaOrdenante]</span>
+				</td>
+				<td bgcolor="#F7F7F7" width="2%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="43%" valign="top">
+				<span class="NormalAzul">&nbsp;RFC Emisor Cuenta beneficiario:</span><span class="Normal">[RfcEmisorCtaBen]</span><br>
+				<span class="NormalAzul">&nbsp;Cuenta beneficiario:</span><span class="Normal">[CtaBeneficiario]</span>
+				</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="45%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="2%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="43%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="5" width="99%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="45%" class="Subtitulo">Información del depósito</td>
+				<td width="2%">&nbsp;</td>
+				<td width="43%" class="Subtitulo">SPEI Digital</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="45%" valign="top">
+				<span class="NormalAzul">&nbsp;Fecha de pago:</span><span class="Normal">&nbsp;[Format(Pago_FechaPago,Medium Date)]&nbsp;[Format(Pago_FechaPago,hh:nn:ss)]</span><br>
+				<span class="NormalAzul">&nbsp;Forma de pago:</span><span class="Normal">&nbsp;[Pago_FormaDePagoP]</span><br>
+				<span class="NormalAzul">&nbsp;Moneda:</span><span class="Normal">&nbsp;[Pago_MonedaP]</span><br>
+				<span class="NormalAzul">&nbsp;Tipo de cambio:</span><span class="Normal">&nbsp;[Pago_TipoCambioP]</span><br>
+				<span class="NormalAzul">&nbsp;Monto:</span><span class="Normal">&nbsp;[Format(Pago_Monto,Standard)]</span><br>
+				<span class="NormalAzul">&nbsp;No. Operación:</span><span class="Normal">&nbsp;[Pago_NumOperacion]</span>
+				</td>
+				<td width="2%">&nbsp;</td>
+				
+				<td bgcolor="#F7F7F7" width="43%">
+					<span style="display: block; word-break: break-all">
+						<span class="NormalAzul">&nbsp;Tipo cadena de pago:</span><span class="Normal">&nbsp;[Pago_TipoCadPago]</span><br>
+						<br>
+						<span class="NormalAzul">&nbsp;Certificado de Pago:</span><br>
+						<span class="CadenaLarga">&nbsp;[Pago_CertPago]</span><br>
+						<span class="NormalAzul">&nbsp;Cadena original del comprobante de pago:</span><br>
+						<span class="CadenaLarga">&nbsp;[CadenaPago]</span><br>
+						<span class="NormalAzul">&nbsp;Sello de Pago:</span><br>
+						<span class="CadenaLarga">&nbsp;[SelloPago]</span>
+					</span>
+				</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="45%">&nbsp;</td>
+				<td width="2%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="43%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="5" width="99%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="45%" class="Subtitulo">Documentos Relacionados</td>
+				<td width="2%">&nbsp;</td>
+				<td width="43%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" colspan="3" width="90%">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="NormalAzul">Id Documento</td>
+						<td class="NormalAzul">Serie</td>
+						<td class="NormalAzul">Folio</td>
+						<td class="NormalAzul">Moneda</td>
+						<td class="NormalAzul">T.C.</td>
+						<td class="NormalAzul">Método de pago</td>
+						<td class="NormalAzul">No. Parcialidad</td>
+						<td class="NormalAzul" align="right">Importe Saldo anterior</td>
+						<td class="NormalAzul" align="right">Importe Pagado</td>
+						<td class="NormalAzul" align="right">Importe Saldo insoluto</td>
+					</tr>
+				<DETAIL>
+					<tr>
+						<td class="Normal">[DR_IdDocumento]</td>
+						<td class="Normal">[DR_Serie]</td>
+						<td class="Normal">[DR_Folio]</td>
+						<td class="Normal">[DR_MonedaDR]</td>
+						<td class="Normal">[Format(DR_TipoCambioDR,0.######)]</td>
+						<td class="Normal">[DR_MetodoDePagoDR]</td>
+						<td class="Normal">[DR_NumParcialidad]</td>
+						<td class="Normal" align="right">[Format(DR_ImpSaldoAnt,Standard)]&nbsp;</td>
+						<td class="Normal" align="right">[Format(DR_ImpPagado,Standard)]&nbsp;</td>
+						<td class="Normal" align="right">[Format(DR_ImpSaldoInsoluto,Standard)]&nbsp;</td>
+					</tr>
+				</DETAIL>
+				</table>
+				</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="45%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="2%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="43%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+
+
+			<tr>
+				<td colspan="5" width="99%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="45%" class="Subtitulo">CFDI Relacionados</td>
+				<td width="2%">&nbsp;</td>
+				<td width="43%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="45%" valign="top" colspan="3">
+				<span class="NormalAzul">&nbsp;Tipo Relación:</span><span class="Normal">&nbsp;[CFDTipoRelacion]</span><br>
+				<span class="NormalAzul">&nbsp;UUID:</span><span class="Normal">&nbsp;[CFDUUIDRelacionados]</span><br>
+				</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			
+			
+			
+			
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td width="45%">&nbsp;</td>
+				<td width="2%">&nbsp;</td>
+				<td width="43%">&nbsp;</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5%">&nbsp;</td>
+				<td bgcolor="#F7F7F7" width="45%" valign="top" colspan="3">
+					<span style="display: block; word-break: break-all">
+						<span class="NormalAzul">&nbsp;Sello Digital del SAT:</span><span class="CadenaLarga">&nbsp;<br>&nbsp;[SelloSAT]</span><br><br>
+						<span class="NormalAzul">&nbsp;Sello Digital del CFDI:</span><span class="CadenaLarga">&nbsp;<br>&nbsp;[SelloCFD]</span><br><br>
+						<span class="NormalAzul">&nbsp;CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:</span><span class="CadenaLarga"><br>&nbsp;[cadenaOriginalComplemento]<br></span><br>
+					</span>
+				</td>
+				<td width="5%">&nbsp;</td>
+			</tr>
+
+
+			
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-color: #808080; padding: 0.02in"><preNot></preNot>
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border-color: #808080; padding: 0.02in">&nbsp;</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

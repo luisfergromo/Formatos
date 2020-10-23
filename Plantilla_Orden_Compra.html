@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="es">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title></title>
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+	    font-family:Arial;
+        }
+	table td{
+	padding:3px;
+	}
+
+	.clsFontSmall {
+            font-size:small;
+        }
+
+        .tblHeader, .tblContent, .tblTotales, .tblProvider, .tblDetail {
+            width: 100%;
+        }
+
+	.clsFontLarger {
+            font-size:x-large;
+            font-weight:bold;
+	}        
+
+        .tdCenter {
+            text-align: center;
+        }
+
+        .clsBackGray {
+            background-color: #e0e0eb;
+        }
+
+        .clsFontLarge {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .tblContent td, {
+            border: 1px solid black;
+        }
+	.tblHeader{
+	  border: 1px solid black;
+	} 
+        .minW1 {
+            min-width: 250px;
+        }
+
+        .minW2 {
+            min-width: 150px;
+        }
+
+        .clsMaxW {
+            width: 100%;
+        }
+
+        .clsRef {
+            color: red;
+        }
+
+        .clsTextRight {
+            text-align: right;
+        }
+
+        .wrapper {
+			width:98%;
+			margin:0px auto;
+        }
+	.clsBold{
+	    font-weight:bold;
+	}
+	.clsBorder{
+	 border: 1px solid black;
+	}
+	.tblContent{
+	  border-collapse:collapse;
+	}
+	.tblDetail{
+	 border-collapse:collapse;
+	}
+	.tblDetail td{
+	  border:1px solid black;
+	}
+	.clsCollapse{
+	  border:1px solid black;
+  	  border-collapse:collapse;
+	}
+
+	 .clsTdCollapse{
+	  border:1px solid black;
+	}
+
+	.tblFooter{
+	 border:1px solid black;
+	}
+
+	@media print{
+		html,body{
+		width:100%;
+		font-size:smaller;
+		}
+		.clsFontLarger{
+		font-size:large;
+		}
+		.clsFontLarge {
+            	font-size: medium;
+            	font-weight: bold;
+        	}
+	}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!--HEADER-->
+        <table class="tblHeader">
+            <tr>
+                <td class="tdCenter minW2"><img border="0" src="[LogoEmpresa]"></td>
+                <td class="minW1 clsFontLarger tdCenter">ORDEN COMPRA</td>
+                <td>
+                    <table class="clsMaxW">
+                        <tr>
+                            <td class="clsTextRight clsBold">CODIGO</td>
+                            <td class="clsRef">[Serie][Folio]</td>
+                        </tr>
+                        <tr>
+                            <td class="clsTextRight clsBold">FECHA</td>
+                            <td class="clsFontSmall">[FechaDocumento]</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <!--TABLE PROVIDER-->
+        <table class="tblProvider">
+            <tr>
+                <td class="clsFontLarge" style="width:75%;">
+                    PROVEEDOR: [ReceptorRazonSocial]
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="clsFontLarge">FOLIO:</td>
+                            <td class="clsRef">[Serie] [Folio]</td>
+                        </tr>
+                        <tr>
+                            <td class="clsFontLarge">FECHA:</td>
+                            <td class="clsFontSmall"> [FechaDocumento]</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--TABLE DEPARTMENT-->
+        <table>
+            <tr>
+                <td rowspan="2" class="clsFontLarge">DEPARTAMENTO COMPRAS</td>
+                <td>
+                    <table>
+                        <tr><td class="clsFontLarge">Empresa:</td><td class="clsBold"> [EmisorNombre] </td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <!--TABLE DETAIL-->
+        <table class="tblDetail clsBorder ">
+		
+                <tr class="clsBackGray clsBold clsBorder tdCenter">
+                    <td>Cantidad</td>
+                    <td>Unidad</td>
+                    <td>Unidad SAT</td>
+                    <td>Clave SAT</td>
+                    <td>Descripción</td>
+                    <td>Precio</td>
+                    <td>Importe</td>
+                </tr>
+		<DETAIL>
+                    <tr>
+                        <td class="clsTextRight">[Cantidad]&nbsp;</td>
+                        <td>[UnidadDeMedida]</td>
+                        <td>[ClaveUnidad]</td>
+                        <td>[ClaveProdServ]</td>
+                        <td>[Descripcion] <i>[ComentarioLinea]</i></td>
+                        <td class="clsTextRight">$[Format(ValorUnitario,#,##0.00)]&nbsp;</td>
+                        <td class="clsTextRight">$[Format(Importe,#,##0.00)]&nbsp;</td>
+                    </tr>
+		</DETAIL>
+        </table>
+<br/>
+        <table class="tblTotales" style="border-collapse:collapse;">
+            <tr>
+                <td style="width:75%;"></td>
+                <td class="clsFontLarge clsTdCollapse">SUBTOTAL:</td>
+                <td class="clsTextRight clsBorder">$[Format(Subtotal,#,##0.00)]</td>
+            </tr>
+            <tr>
+                <td style="width:75%;"></td>
+                <td class="clsFontLarge clsTdCollapse">IVA:</td>
+                <td class="clsTextRight clsTdCollapse">$[Format(TotalImpuestosTrasladados,#,##0.00)]</td>
+            </tr>
+            <tr>
+                <td style="width:75%;"></td>
+                <td class="clsFontLarge clsTdCollapse">TOTAL:</td>
+                <td class="clsTdCollapse clsTextRight">$[Format(Total,#,##0.00)]</td>
+            </tr>
+        </table>
+        <p>
+            [CantidadConLetra]<br />
+            <span class="clsBold">Moneda:</span>[Moneda]
+        </p>
+        <hr />
+        <!--TABLE INFO-->
+        <table class="tblContent clsCollapse">
+            <tr>
+		<td>Proyecto: [Proyecto]</td>
+	    </tr>
+        </table>
+	<br/>
+        <!--TABLE INFO-->
+        <table class="tblContent clsCollapse ">
+            <tr>
+                <td class="clsTdCollapse tdCenter clsFontLarge clsBackGray">COMENTARIOS</td>
+                <td class="clsTdCollapse tdCenter clsFontLarge clsBackGray">SOLICITO</td></tr>
+            <tr>
+                <td class="clsTdCollapse">[Comments]</td>
+                <td class="tdCenter clsTdCollapse" rowspan="2">
+                    Departamento Compras
+                    <div style="min-height:50px;height:50px;"></div>					
+                    <hr/>
+                </td>
+            </tr>
+        </table>
+	<br/>
+        <hr/>
+            <div style="float:right;" class="clsTextRight clsFontSmall">
+		[EmisorDomicilioFiscalCalle] No.Ext-[EmisorDomicilioFiscalNoExterior], No.Int-[EmisorDomicilioFiscalNoInterior],[EmisorDomicilioFiscalColonia], C.P.[EmisorDomicilioFiscalCodigoPostal],[EmisorDomicilioFiscalMunicipio],[EmisorDomicilioFiscalEstado],[EmisorDomicilioFiscalPais]
+		<br/>
+		Teléfonos:[EmisorTelefono]<br/>
+		Correo:[EmisorEmail]
+            </div>
+    </div>
+</body>
+</html>
